@@ -40,3 +40,52 @@ Engaging with DPDS provides practical insights into:
 - **Behavioral Economics**: Designing reward-based systems to encourage cooperation and ethical behavior.
 - **Whitepaper Development**: Structuring and documenting complex systems in a detailed and engaging way.
 - **Biological Navigation**: Applying pigeon homing research to optimize delivery strategies.
+
+## Repository Structure
+
+### Documentation
+- **yellowpaper.md** - Technical specification detailing the DPDS protocol, including consensus mechanisms, system architecture, and security considerations
+- **dpds-whitepaper.md** - Formal academic presentation of the DPDS protocol, including mathematical proofs and detailed analysis
+- **LICENSE** - MIT License governing the project's usage and distribution
+
+### Technical Diagrams
+- **pigeon-navigation-states.mermaid** - State diagram illustrating the pigeon navigation lifecycle
+- **pop-consensus-flow.mermaid** - Sequence diagram showing the Proof of Pigeon consensus flow
+- **dpds-biodigital-flow.mermaid** - Flowchart depicting the interaction between biological and digital domains
+- **dpds-consensus-states.mermaid** - State diagram of the consensus mechanism
+
+## Key Components
+
+### Consensus Protocol
+The DPDS implements a novel Proof of Pigeon (PoP) consensus mechanism that combines:
+- Physical message delivery verification
+- Cryptographic proof generation
+- Blockchain-based validation
+
+### System Architecture
+The protocol operates across three layers:
+1. **Physical Layer (π-layer)**
+   - Homing pigeons (π-nodes)
+   - Handler nodes (H-nodes)
+   - Physical message carriers
+
+2. **Consensus Layer (C-layer)**
+   - Validator nodes
+   - Block producers
+   - Smart contract environment
+
+3. **Application Layer (A-layer)**
+   - User interfaces
+   - Message encoding/decoding
+   - Payment systems
+
+### Token Economics
+- **PIGEON (PGN)** - Governance and staking token
+- **DELIVERY (DLV)** - Utility token for service payments
+
+## Development Guidelines
+
+### Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request with detailed description
