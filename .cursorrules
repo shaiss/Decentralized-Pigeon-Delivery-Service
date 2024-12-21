@@ -1,0 +1,139 @@
+I am an expert in blockchain Layer 1 protocol design and whitepaper development, specializing in Proof of Work consensus mechanisms. Please consider the following guidelines when assisting with whitepaper development:
+
+PROJECT SCOPE
+- This is a Layer 1 blockchain protocol focusing on scalability, security, and decentralization
+- The implementation uses Proof of Work consensus with novel optimizations
+- Core focus areas: consensus mechanisms, block production, network architecture, cryptographic primitives, and economic incentives
+
+TECHNICAL EXPERTISE AREAS
+
+Consensus Protocol:
+- Deep understanding of Nakamoto consensus and various PoW algorithms
+- Expertise in difficulty adjustment mechanisms and chain selection rules
+- Knowledge of network synchronization and block propagation
+- Familiarity with attack vectors (51%, selfish mining, eclipse attacks)
+- Understanding of finality guarantees and fork resolution
+
+Block Architecture:
+- Block header and body structure optimization
+- Transaction packaging and ordering mechanisms
+- Merkle tree implementations and optimizations
+- Block size and timing considerations
+- Block reward mechanisms and halving schedules
+
+Cryptographic Foundations:
+- Hash functions (SHA-256, SHA-3, Blake2b, etc.)
+- Elliptic curve cryptography (secp256k1)
+- Digital signature schemes (ECDSA, Schnorr)
+- Zero-knowledge proof systems (optional)
+- Merkle proof constructions
+- Key derivation schemes
+
+Network Layer:
+- P2P network architecture
+- Node discovery mechanisms
+- Network message propagation
+- Mempool management
+- Network security and DoS prevention
+
+Mining Mechanics:
+- Mining algorithm specifications
+- Mining difficulty adjustment
+- Block reward calculations
+- Fee market dynamics
+- Mining pool considerations
+
+Economic Model:
+- Token distribution mechanisms
+- Initial supply and emission schedule
+- Transaction fee mechanisms
+- Network incentive structures
+- Game theory analysis
+
+WRITING STYLE AND STRUCTURE
+
+Document Organization:
+- Begin with an executive summary
+- Include detailed technical specifications
+- Provide mathematical proofs where necessary
+- Include diagrams for complex concepts
+- End with security analysis and economic model
+
+Technical Writing Standards:
+- Use precise technical terminology
+- Include mathematical notations using Markdown
+- Provide clear definitions for all technical terms
+- Use consistent variable naming in equations
+- Include pseudocode for critical algorithms
+
+Mathematical Notation:
+- Use proper Markdown formatting for equations
+- Define all variables and symbols
+- Include complexity analysis where relevant
+- Provide formal security proofs
+- Use standard cryptographic notation
+
+Diagram Requirements:
+- Include network architecture diagrams
+- Provide block structure visualizations
+- Show consensus flow charts
+- Illustrate attack vectors
+- Present economic models graphically
+
+REFERENCE HANDLING
+
+Citation Style:
+- Use IEEE citation format
+- Reference academic papers for core concepts
+- Cite existing blockchain implementations
+- Include links to relevant RFCs
+- Reference cryptographic standards
+
+Key References to Include:
+- Bitcoin whitepaper
+- Academic papers on PoW security
+- Relevant cryptographic protocols
+- Network protocol specifications
+- Economic research papers
+
+SPECIFIC CONSIDERATIONS
+
+Security Analysis:
+- Include formal security definitions
+- Analyze potential attack vectors
+- Provide security proofs
+- Discuss network assumptions
+- Address known vulnerabilities
+
+Performance Analysis:
+- Include theoretical throughput calculations
+- Analyze network scalability
+- Discuss hardware requirements
+- Provide benchmark methodologies
+- Compare with existing solutions
+
+Implementation Guidelines:
+- Specify minimum node requirements
+- Detail networking protocols
+- Define API interfaces
+- Outline data structures
+- Provide pseudocode for critical components
+
+WHITEPAPER SECTIONS
+
+1. Abstract
+2. Introduction
+3. System Architecture
+4. Consensus Mechanism
+5. Block Structure
+6. Network Protocol
+7. Mining Algorithm
+8. Economic Model
+9. Security Analysis
+10. Performance Evaluation
+11. Implementation Considerations
+12. Future Work
+13. Conclusion
+14. References
+
+When contributing to whitepaper development, maintain academic rigor while ensuring practical implementability of all proposed mechanisms. Balance theoretical foundations with real-world considerations, and always prioritize security and decentralization in design decisions.
