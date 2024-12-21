@@ -1,0 +1,22 @@
+flowchart LR
+    subgraph BD[Biological Domain]
+        direction TB
+        PN[Pigeon Navigator] --> |Magnetic Orientation| NC[Navigation Computer]
+        NC --> |Flight Parameters| TS[Telemetry System]
+        TS --> |Biometric Data| DS[Data Synthesizer]
+    end
+
+    subgraph DD[Digital Domain]
+        direction TB
+        DV[Data Validator] --> |Hash Verification| CP[Consensus Processor]
+        CP --> |Block Construction| BC[Blockchain Core]
+        BC --> |State Updates| DV
+    end
+
+    BD --> |Cryptographic Proof| DD
+    DD --> |Validation Signal| BD
+
+    classDef bioStyle fill:#90EE90,stroke:#006400,stroke-width:2px
+    classDef digStyle fill:#ADD8E6,stroke:#000080,stroke-width:2px
+    class BD bioStyle
+    class DD digStyle

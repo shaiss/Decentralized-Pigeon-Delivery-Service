@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant U as User
+    participant H as Handler Node
+    participant P as Pigeon
+    participant V as Validator
+    participant B as Blockchain
+
+    U->>H: Submit Message Request
+    H->>B: Register Delivery Task
+    B->>H: Issue Challenge Hash
+    H->>P: Attach Message Payload
+    
+    Note over P: Physical Delivery Phase
+    P->>P: Navigate to Destination
+    
+    P->>H: Complete Delivery
+    H->>V: Submit Delivery Proof
+    V->>B: Verify & Record Proof
+    B->>H: Issue PGN Tokens
+    B->>U: Confirm Delivery

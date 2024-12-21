@@ -1,0 +1,33 @@
+stateDiagram-v2
+    [*] --> Pending: New Block Received
+    
+    Pending --> BlockHeaderValidation: Check Structure
+    BlockHeaderValidation --> ProofOfWorkValidation: Valid Header
+    BlockHeaderValidation --> Rejected: Invalid Header
+    
+    ProofOfWorkValidation --> PigeonProofValidation: Valid PoW
+    ProofOfWorkValidation --> Rejected: Invalid PoW
+    
+    PigeonProofValidation --> TransactionValidation: Valid PoP
+    PigeonProofValidation --> Orphaned: Missing PoP Data
+    
+    TransactionValidation --> Finalized: Valid TXs
+    TransactionValidation --> Rejected: Invalid TXs
+    
+    Finalized --> ChainUpdate: Update UTXO
+    ChainUpdate --> ForkResolution: Chain Split
+    
+    ForkResolution --> MainChain: Highest PoW + PoP
+    ForkResolution --> StaleChain: Lower Work
+
+    Orphaned --> Pending: Missing Data Received
+    StaleChain --> [*]
+    Rejected --> [*]
+    MainChain --> [*]
+
+    state ForkResolution {
+        [*] --> WorkCalculation
+        WorkCalculation --> PigeonMetricsEvaluation
+        PigeonMetricsEvaluation --> ChainSelection
+        ChainSelection --> [*]
+    }

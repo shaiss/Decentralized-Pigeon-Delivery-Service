@@ -1,0 +1,28 @@
+stateDiagram-v2
+    [*] --> Ready: Initialize
+    Ready --> PreFlight: Assign Message
+    PreFlight --> InFlight: Take Off
+    
+    InFlight --> NavigationPhase
+    NavigationPhase --> RecalculatingRoute
+    RecalculatingRoute --> NavigationPhase
+    
+    NavigationPhase --> ApproachingDestination
+    ApproachingDestination --> Landed: Arrive
+    
+    Landed --> DeliveryVerification
+    DeliveryVerification --> Ready: Reset
+    
+    state NavigationPhase {
+        [*] --> MagneticOrientation
+        MagneticOrientation --> SolarPositioning
+        SolarPositioning --> LandmarkReference
+        LandmarkReference --> MagneticOrientation
+    }
+    
+    state DeliveryVerification {
+        [*] --> BiometricCheck
+        BiometricCheck --> GPSValidation
+        GPSValidation --> ProofGeneration
+        ProofGeneration --> [*]
+    }
