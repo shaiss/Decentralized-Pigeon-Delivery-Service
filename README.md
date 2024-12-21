@@ -89,3 +89,22 @@ The protocol operates across three layers:
 1. Fork the repository
 2. Create a feature branch
 3. Submit a pull request with detailed description
+
+### Documentation Standards
+- Technical specifications go in tbd
+- Academic research and proofs go in tbd
+- Diagrams should use Mermaid syntax
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## References
+
+The project builds upon foundational work in:
+- Blockchain technology (Bitcoin, Ethereum)
+- Pigeon navigation research
+- Graph theory and routing algorithms
+- Cryptographic protocols
+
+For detailed technical specifications, please refer to the yellowpaper.md and dpds-whitepaper.md files.
